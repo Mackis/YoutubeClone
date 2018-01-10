@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		01004872200691650063C625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01004871200691650063C625 /* AppDelegate.swift */; };
-		01004874200691650063C625 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01004873200691650063C625 /* ViewController.swift */; };
-		01004877200691650063C625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01004875200691650063C625 /* Main.storyboard */; };
 		01004879200691650063C625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01004878200691650063C625 /* Assets.xcassets */; };
 		0100487C200691650063C625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0100487A200691650063C625 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -17,8 +15,6 @@
 /* Begin PBXFileReference section */
 		0100486E200691650063C625 /* YoutubeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01004871200691650063C625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01004873200691650063C625 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		01004876200691650063C625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01004878200691650063C625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0100487B200691650063C625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0100487D200691650063C625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,14 +50,28 @@
 		01004870200691650063C625 /* YoutubeClone */ = {
 			isa = PBXGroup;
 			children = (
-				01004871200691650063C625 /* AppDelegate.swift */,
-				01004873200691650063C625 /* ViewController.swift */,
-				01004875200691650063C625 /* Main.storyboard */,
-				01004878200691650063C625 /* Assets.xcassets */,
-				0100487A200691650063C625 /* LaunchScreen.storyboard */,
-				0100487D200691650063C625 /* Info.plist */,
+				01004883200691830063C625 /* Application */,
+				01004884200691A70063C625 /* Resources */,
 			);
 			path = YoutubeClone;
+			sourceTree = "<group>";
+		};
+		01004883200691830063C625 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0100487D200691650063C625 /* Info.plist */,
+				01004871200691650063C625 /* AppDelegate.swift */,
+				0100487A200691650063C625 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		01004884200691A70063C625 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01004878200691650063C625 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +135,6 @@
 			files = (
 				0100487C200691650063C625 /* LaunchScreen.storyboard in Resources */,
 				01004879200691650063C625 /* Assets.xcassets in Resources */,
-				01004877200691650063C625 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01004874200691650063C625 /* ViewController.swift in Sources */,
 				01004872200691650063C625 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +152,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		01004875200691650063C625 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				01004876200691650063C625 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0100487A200691650063C625 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -276,7 +276,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B534EWRJTS;
-				INFOPLIST_FILE = YoutubeClone/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YoutubeClone/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mDevSA.YoutubeClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B534EWRJTS;
-				INFOPLIST_FILE = YoutubeClone/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YoutubeClone/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mDevSA.YoutubeClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
